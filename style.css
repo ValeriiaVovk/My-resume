@@ -1,0 +1,32 @@
+.main-page {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.position {
+    font-weight: bold;
+}
+
+.header-name {
+    font-style: italic;
+}
+
+.title-in-table {
+    text-transform: uppercase;
+}
+
+.link {
+    color: #00f;
+    text-decoration: underline;
+}
+.link:visited {
+    color: #005;
+    text-decoration: underline;
+}
+.link:hover {
+    text-decoration: none;
+}
+
+.skills-items {
+    list-style-type: square;
+}
