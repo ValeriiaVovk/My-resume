@@ -5,14 +5,21 @@
 
 .position {
     font-weight: bold;
+    border-bottom: rgb(3, 3, 172) solid 2px;
 }
 
 .header-name {
     font-style: italic;
+    border-bottom: rgb(3, 3, 172) solid 2px;
+}
+
+.table {
+    background-color: rgb(216, 216, 253);
 }
 
 .title-in-table {
     text-transform: uppercase;
+    background-color:  rgb(182, 182, 238);
 }
 
 .link {
@@ -29,4 +36,12 @@
 
 .skills-items {
     list-style-type: square;
+    border-bottom: rgb(3, 3, 172) solid 2px;
+}
+.achievements-items {
+    border-bottom: rgb(3, 3, 172) solid 2px;
+}
+.main-photo {
+    border: rgb(3, 3, 172) solid 2px;
+    padding: 10px;
 }
