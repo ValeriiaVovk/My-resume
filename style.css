@@ -6,15 +6,19 @@
 .position {
     font-weight: bold;
     border-bottom: rgb(3, 3, 172) solid 2px;
+    display: inline-block;
 }
 
 .header-name {
     font-style: italic;
     border-bottom: rgb(3, 3, 172) solid 2px;
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 .table {
     background-color: rgb(216, 216, 253);
+    width: 100%;
 }
 
 .title-in-table {
@@ -44,4 +48,9 @@
 .main-photo {
     border: rgb(3, 3, 172) solid 2px;
     padding: 10px;
+    height: 100px;
+    width: 100px;
+    float: right;
+    display: inline;
+    box-sizing: border-box;
 }
