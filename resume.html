@@ -4,67 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css">
     <title>Resume</title>
 </head>
 <body>
-    <div class="main-page">
-        <div>
-            <h1 class="header-name">Valeriia Vovk</h1>
-            <img src="./photo_2022-11-06_17-22-01.jpg" alt="my_photo" height="200" class="main-photo" /> <br>
-            <p class="position">Junior Frontend developer</p>
-        </div>
+    <div class="container">
+        <!--Sidebar-->
+        <aside class="sidebar">
+            <h1 class="heading-name">
+                Valeriia <br />
+                <span class="heading-surname">Vovk</span> 
+            </h1>
+            <a href="./hire.html" class="link-to-hire">Hire me</a> <br />
+            <img 
+                src="./photo_2023-01-15_16-06-26.jpg" 
+                alt="photo-valeriia"  
+                width="385" 
+                height="292"
+                class="main-photo"
+            />
+            
+            <div class="contact-sidebar">
+                <h2 class="heading-aside">Contact</h2>
+                <ul class="list contact-list">
+                    <li class="contact-list-item">
+                        Address <br />
+                        <span class="contact-list-item-secondary">Smila, Ukraine</span>
+                    </li>
+                    <li class="contact-list-item">
+                        Phone <br />
+                        <span class="contact-list-item-secondary">+380631390943</span>
+                    </li>
+                    <li class="contact-list-item">
+                        E-mail <br />
+                        <a href="mailto:vovkvaleriya15@gmail.to">vovkvaleriya15@gmail.com</a>
+                    </li>
+                    <li class="contact-list-item">
+                        Linkedin <br />
+                        <a href="https://www.linkedin.com/in/valeriia-vovk-92293a251">www.linkedin.com/in/valeriia-vovk</a>
+                    </li>
+                </ul>
+            </div>
 
-        <div>
-            <a href="./hire.html" class="link">Hire me</a>
-            <p><strong>Work experience</strong></p>
-            <table border="1" cellspacing="0" cellpadding="10px" class="table">
-                <tr>
-                    <th class="title-in-table">Period</th>
-                    <th class="title-in-table">Position</th>
-                </tr>
-                <tr>
-                    <td>2021 - present</td>
-                    <td>Insurance manager at 
-                    <a href="https://ingo.ua/" class="link">INGO</a></td>
-                </tr>
-                <tr>
-                    <td rowspan="3" class="title-in-table"> <strong>Description</strong> </td>
-                    <td>Consulting clients on the insurance product</td>
-                </tr>
-                <tr>
-                    <td>Conclusion of insurance contracts</td>
-                </tr>
-                <tr>
-                    <td>Work with the database</td>
-                </tr>
-                <tr>
-                    <td>2019 - 2020</td>
-                    <td>Insurance manager at 
-                    <a href=https://universalna.com/ class="link">UNIVERSALNA</a></td>
-                </tr>
-                <tr>
-                    <td rowspan="2" class="title-in-table"><strong>Description</strong></td>
-                    <td>Customer service</td>
-                </tr>
-                <tr>
-                    <td>Support of existing insurance contracts</td>
-                </tr>
-            </table>
-            <p><strong>Skills:</strong></p>
-            <ul class="skills-items">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git</li>
-                <li>Figma</li>
-            </ul>
-            <p><strong>Achievements:</strong></p>
-            <ol class="achievements-items">
-                <li>Took a leading position among the number of consulted contracts</li>
-                <li>I have experience in web-design</li>
-                <li>Created several educational projects</li>
-            </ol>
-        </div>
+            <div class="language-sidebar">
+                <h2 class="heading-aside">Languages</h2>
+                <ul class="list">
+                    <li class="language-list-item">Ukrainian - C2</li>
+                    <li class="language-list-item">English - B1</li>
+                    <li class="language-list-item">Polish - A2</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!--Main content-->
+        <main class="main-content">
+            <section class="summary">
+                <h2 class="heading">Summary</h2>
+                <p class="bold-text summary-text">I'm an enthusiastic and detail-oriented Junior Front-End Developer. I want to be part of a friendly and professional team in which I used my knowledge and could develop my development skills to achieve team results. I am keen to gain more experience in the field. For this reason, I am looking for a company willing to offer me a placement among their developers. In return, I would offer my full commitment, and be a pleasant and friendly addition to your team. </p>
+            </section>
+
+            <section>
+                <h2 class="heading">Skills Highlights</h2>
+                <div class="skills-container">
+                    <ul class="skill-list">
+                        <li class="skills-item">HTML</li>
+                        <li class="skills-item">CSS</li>
+                        <li class="skills-item">JavaScript</li>
+                    </ul>
+                    <ul class="skill-list">
+                        <li class="skills-item">React</li>
+                        <li class="skills-item">Git</li>
+                        <li class="skills-item">Figma</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="heading">Work Experience</h2>
+                <ul class="list list-work-one">
+                    <li>
+                        <span class="bold-text">Name of employer: </span>INGO, Odesa
+                    </li>
+                    <li>
+                        <span class="bold-text">Dates of employment: </span>09/2021 - present
+                    </li>
+                    <li>
+                        <span class="bold-text">Job title: </span>Insurance manager
+                    </li>
+                    <li>
+                        <span class="bold-text">Role description: </span>Consulting clients on the insurance product, conclusion of insurance contracts, work with the database.
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li>
+                        <span class="bold-text">Name of employer: </span>Universalna, Kyiv
+                    </li>
+                    <li>
+                        <span class="bold-text">Dates of employment: </span>01/2019 - 08/2019
+                    </li>
+                    <li>
+                        <span class="bold-text">Job title: </span>Insurance manager
+                    </li>
+                    <li>
+                        <span class="bold-text">Role description: </span>Customer service, support of existing insurance contracts.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="heading">Education</h2>
+                <ul class="list education-list">
+                    <li>
+                        <span class="bold-text">Dates of studying: </span>from 2015 - to 2019
+                    </li>
+                    <li>
+                        <span class="bold-text">Name of institution: </span>Banking University in Kyiv
+                    </li>
+                    <li>
+                        <span class="bold-text">Degree and major: </span>Bachelor, "Finance and credit"
+                    </li>
+                </ul>
+            </section>
+        </main>
     </div>
 </body>
 </html>
