@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Hire me</title>
+</head>
+<body>
+    <div class="container-hire">
+        <h1 class="heading-hire">Hire me</h1>
+        <p class="bold-text">Contact information</p>
+
+        <table class="table">
+            <tr>
+                <th class="bold-text">Phone</th>
+                <td >+380631390943</td>
+            </tr>
+            <tr>
+                <th class="bold-text">Address</th>
+                <td>Ukraine</td>
+            </tr>
+        </table>
+        <br />
+
+        <form action="./hire.html" method="get">
+            <fieldset class="form-fieldset">
+            <legend>Contact form</legend>
+
+            <label for="email">Email <span class="req">*</span> </label> <br />
+            <input type="email"
+                required
+                name="email"
+                align="right"
+                id="email"
+                placeholder="Email"
+                class="email"
+            />
+            <p class="error">Please, fill in this field</p>
+            <br />
+            <br />
+
+            <label for="description"> Description: </label> <br />
+            <textarea name="description" id="description" cols="30" rows="5" placeholder="Text"></textarea>
+            <br />
+            <br />
+
+            <label for="work-type">Work type</label> <br />
+            <select name="work-type" id="work-type">
+                <option value=""></option>
+                <option value="Work in office">Work in office</option>
+                <option value="Remote work">Remote work</option>
+                <option value="One-time project">One-time project</option>
+            </select>
+            <br />
+            <br />
+
+            <input type="submit" value="Hire me">
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

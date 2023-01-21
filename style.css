@@ -151,3 +151,119 @@ li a {
   margin-top: 31px;
   margin-bottom: 15px;
 }
+
+/*Hire me*/
+
+.container-hire {
+  max-width: 1024px;
+  margin: auto;
+}
+
+table, th, td {
+  border: 1px solid #1e1e1e;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.heading-hire {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*Hire me - form style*/
+
+input, 
+select, 
+textarea {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+textarea,
+input[type="email"],
+select {
+  background: #F8FAFC;
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  width: 460px;
+  height: 139px;
+}
+
+input[type="email"] {
+  width: 460px;
+  height: 48px;
+}
+
+.req {
+  color: #ED0131;
+}
+
+input[type="email"]:active,
+select:focus,
+textarea:focus,
+input[type="submit"]:focus {
+  outline: 1px solid #0048D9;
+}
+
+input[type="email"]:valid {
+  border: 1px solid #0E6245;
+}
+
+input[type="email"]:invalid {
+  border: 1px solid #ED0131;
+}
+
+.error {
+  display: none;
+  font-size: 12px;
+  color: #ED0131;
+}
+
+.email:invalid + .error {
+  display: block;
+}
+
+select {
+  width: 484px;
+  height: 48px;
+  /*background: url(./Vector.png) no-repeat center right .75rem;*/
+}
+
+
+input[type="submit"] {
+  background: #0048D9;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 4px 16px;
+  width: 92px;
+  height: 32px;
+}
+
+input[type="submit"]:hover {
+  background: #002266;
+}
+
+label {
+  color: #6F7482;
+}
+
+.form-fieldset {
+    padding: 10px;
+}
