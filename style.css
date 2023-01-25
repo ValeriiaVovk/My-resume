@@ -29,6 +29,11 @@
   border: 1px solid #1e1e1e;
   width: 385px;
 }
+
+.fixed-position {
+  position: fixed;
+}
+
 .heading-name {
   font-weight: 600;
   font-size: 40px;
@@ -100,7 +105,7 @@ li a {
   margin-bottom: 15px;
 }
 .language-sidebar {
-  margin-bottom: 58px;
+  margin-bottom: 530px;
 }
 
 /*main conteiner*/
@@ -150,6 +155,10 @@ li a {
 .list-work-one {
   margin-top: 31px;
   margin-bottom: 15px;
+}
+
+.education-list {
+  margin-bottom: 530px;
 }
 
 /*Hire me*/
@@ -265,5 +274,11 @@ label {
 }
 
 .form-fieldset {
-    padding: 10px;
+  padding: 10px;
+}
+
+.form {
+  position: absolute;
+  left: calc(50% - 254.4px);
+  top: calc(50% - 257px);
 }
