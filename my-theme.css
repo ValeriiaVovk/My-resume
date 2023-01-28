@@ -1,0 +1,9 @@
+.my-theme {
+    --color-primary: #240046;
+    --color-secondary: #10002b;
+    --color-text: #3c096c;
+    --color-text-white: #ecd3fb;
+    --color-invalid: #ed0131;
+    --color-focus: #0048d9;
+    --color-background-main: #a3083189;
+}
