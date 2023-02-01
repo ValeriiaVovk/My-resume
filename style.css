@@ -47,9 +47,9 @@
   width: 385px;
 }
 
-.fixed-position {
+/*.fixed-position {
   position: fixed;
-}
+}*/
 
 .heading-name {
   font-weight: 600;
@@ -218,7 +218,7 @@ textarea {
 textarea,
 input[type="email"],
 select {
-  background: #F8FAFC;
+  background-color: #F8FAFC;
   padding: 12px;
   border-radius: 4px;
   outline: none;
@@ -232,7 +232,6 @@ textarea {
 
 input[type="email"] {
   width: 460px;
-  height: 48px;
 }
 
 .req {
@@ -267,7 +266,7 @@ input[type="email"]:invalid {
 select {
   width: 484px;
   height: 48px;
-  /*background: url(./Vector.png) no-repeat center right .75rem;*/
+  background: url(./Vector.png) no-repeat center right .75rem;
 }
 
 
@@ -295,5 +294,102 @@ label {
 .form {
   position: absolute;
   left: calc(50% - 254.4px);
-  top: calc(50% - 257px);
+  top: calc(50% - 242.4px);
+}
+
+/*Adaptive*/
+
+@media screen and (max-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100vw;
+  }
+
+  .main-photo {
+    width: 100vw;
+    object-fit: contain;
+  }
+
+  .main-content {
+    width: 100vw;
+  }
+
+  .adaptive {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  
+  .language-sidebar,
+  .education-list {
+    margin-bottom: 43px;
+  }
+
+  .heading {
+    width: 100%;
+  }
+
+  .heading-aside {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 780px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100vw;
+    object-fit: contain;
+  }
+
+  .main-photo {
+    margin-left: var(--margin-left-aside);
+  }
+  
+  .main-content {
+    width: 100vw;
+  }
+  .adaptive {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  .language-sidebar,
+  .education-list {
+    margin-bottom: 43px;
+  }
+  .heading {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 1100px) {
+  .container {
+    width: 100%;
+  }
+  .main-content {
+    width: 100vw;
+  }
+  .adaptive {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  .language-sidebar,
+  .education-list {
+    margin-bottom: 43px;
+  }
+  .heading {
+    width: 100%;
+  }
 }
