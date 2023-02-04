@@ -45,6 +45,7 @@
   background: var(--color-background-main);
   border: 1px solid var(--color-secondary);
   width: 385px;
+  box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
 }
 
 /*.fixed-position {
@@ -68,6 +69,12 @@
 .main-photo {
   margin-top: 36px;
   margin-bottom: 50px;
+  transition: transform .3s;
+}
+
+.main-photo:hover {
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25);
+  transform: scale(1.75, 1.75) translate(82px,10px);
 }
 
 .heading-surname {
@@ -174,6 +181,13 @@ li a {
 
 .list-work-one {
   margin-bottom: var(--space-secondary);
+}
+
+.previous-work {
+  opacity: .7;
+}
+.previous-work:hover {
+  opacity: 1;
 }
 
 /*Hire me*/
@@ -310,11 +324,17 @@ label {
 
   .sidebar {
     width: 100vw;
+    box-shadow: none;
   }
 
   .main-photo {
     width: 100vw;
     object-fit: contain;
+  }
+
+  .main-photo:hover {
+    box-shadow: none;
+    transform: none;
   }
 
   .main-content {
@@ -352,10 +372,16 @@ label {
   .sidebar {
     width: 100vw;
     object-fit: contain;
+    box-shadow: none;
   }
 
   .main-photo {
     margin-left: var(--margin-left-aside);
+  }
+
+  .main-photo:hover {
+    box-shadow: none;
+    transform: none;
   }
   
   .main-content {
@@ -380,6 +406,10 @@ label {
   }
   .main-content {
     width: 100vw;
+  }
+
+  .sidebar {
+    box-shadow: none;
   }
   .adaptive {
     margin-left: 28px;
