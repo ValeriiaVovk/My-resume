@@ -55,3 +55,40 @@ document.addEventListener("keydown", (event) => {
     blockF.scrollIntoView({ behavior: "smooth" });
   }
 });
+
+const blockG = document.querySelector(".blockG");
+
+document.addEventListener("keydown", (event) => {
+  if (event.code === "KeyG") {
+    blockG.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+const repositories = document.querySelector(".repositories");
+
+window.addEventListener("load", function () {
+  fetch("https://api.github.com/users/ValeriiaVovk/repos")
+    .then(function (response) {
+      return response.json();
+    })
+
+    .then(function (data) {
+      data.forEach(function (repo) {
+        const items = document.createElement("li");
+        const name = document.createElement("a");
+        const description = document.createElement("p");
+
+        name.textContent = repo.full_name;
+        name.setAttribute("href", repo.html_url);
+        name.setAttribute("target", "_blank");
+
+        items.appendChild(name);
+        repositories.appendChild(items);
+
+        if (repo.description) {
+          description.textContent = repo.description;
+          items.appendChild(description);
+        }
+      });
+    });
+});

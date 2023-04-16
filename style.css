@@ -168,7 +168,7 @@ li a {
 }
 
 .language-sidebar,
-.education-list {
+.projects-section {
   margin-bottom: 530px;
 }
 
@@ -250,6 +250,25 @@ li a {
 .previous-work:hover {
   opacity: 1;
   transition: opacity 0.7s ease-in-out;
+}
+
+.repositories {
+  margin-top: 20px;
+}
+.repositories li {
+  list-style-position: inside;
+  padding-top: 10px;
+}
+.repositories a {
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+}
+.repositories a:visited {
+  color: #530898;
+}
+.repositories a:hover {
+  color: #6810ba;
 }
 
 /*Hire me*/

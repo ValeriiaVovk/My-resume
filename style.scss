@@ -155,7 +155,8 @@ li {
 }
 
 .language-sidebar,
-.education-list {
+.projects-section
+/*.education-list*/ {
   margin-bottom: 530px;
 }
 
@@ -228,6 +229,29 @@ li {
   &:hover {
     opacity: 1;
     transition: opacity .7s ease-in-out;
+  }
+}
+
+.repositories {
+  margin-top: 20px;
+
+  li {
+    list-style-position: inside;
+    padding-top: 10px;
+  }
+  a {
+    font-weight: 600;
+    color: var(--color-text);
+    cursor: pointer;
+    
+
+    &:visited {
+      color: #530898;
+    }
+
+    &:hover {
+      color: #6810ba;
+    }
   }
 }
 
