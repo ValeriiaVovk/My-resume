@@ -66,29 +66,46 @@ document.addEventListener("keydown", (event) => {
 
 const repositories = document.querySelector(".repositories");
 
-window.addEventListener("load", function () {
-  fetch("https://api.github.com/users/ValeriiaVovk/repos")
-    .then(function (response) {
-      return response.json();
-    })
+class Api {
+  constructor(token, username) {
+    this.token = token;
+    this.username = username;
+  }
 
-    .then(function (data) {
-      data.forEach(function (repo) {
-        const items = document.createElement("li");
-        const name = document.createElement("a");
-        const description = document.createElement("p");
+  async getRepos() {
+    const response = await fetch(
+      `https://api.github.com/users/${this.username}/repos`,
+      {
+        headers: {
+          Authorization: `token ${this.token}`,
+        },
+      }
+    );
 
-        name.textContent = repo.full_name;
-        name.setAttribute("href", repo.html_url);
-        name.setAttribute("target", "_blank");
+    const data = await response.json();
+    return data;
+  }
+}
 
-        items.appendChild(name);
-        repositories.appendChild(items);
+const token = "";
+const username = "ValeriiaVovk";
 
-        if (repo.description) {
-          description.textContent = repo.description;
-          items.appendChild(description);
-        }
-      });
-    });
+const gitApi = new Api(token, username);
+gitApi.getRepos().then((data) => {
+  data.forEach(function (repo) {
+    const items = document.createElement("li");
+    const name = document.createElement("a");
+    const description = document.createElement("p");
+
+    name.textContent = repo.full_name;
+    name.setAttribute("href", repo.html_url);
+
+    items.appendChild(name);
+    repositories.appendChild(items);
+
+    if (repo.description) {
+      description.textContent = repo.description;
+      items.appendChild(description);
+    }
+  });
 });
